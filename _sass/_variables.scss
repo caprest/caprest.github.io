@@ -1,68 +1,50 @@
-// Cosmo 4.1.3
-// Bootswatch
 
 //
-// Color system
+// VARIABLES
 //
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #373a3c !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
 
-$blue:    #2780E3 !default;
-$indigo:  #6610f2 !default;
-$purple:  #613d7c !default;
-$pink:    #e83e8c !default;
-$red:     #FF0039 !default;
-$orange:  #f0ad4e !default;
-$yellow:  #FF7518 !default;
-$green:   #3FB618 !default;
-$teal:    #20c997 !default;
-$cyan:    #9954BB !default;
+// Colors
 
-$primary:       $blue !default;
-$secondary:     $gray-800 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+$blue: #4183C4;
 
-// Options
 
-$enable-rounded: false !default;
+// Main theme colors 
+// Some cool main theme colors(violet:#8476ad;blue:#5cacee;red:#ff7373,#ff6f69;green:#6acf64,#2ddbb3;orange:#ffa268)
 
-// Body
+$mono-color:#c44a45;                // main theme color(header, links, footer icons, buttons, post-title)
+$hl-color: $darkGray;              // header link color (author name and posted on date) for blog post meta 
+$navbar-hover-color:$gray;        // navbar hover color (site name and navbar links hover color)
+$link-color: $darkerGray;        // normal hyperlink color other than the ones above.
 
-$body-color:    $gray-800 !default;
 
-// Fonts
+// Heading colors
+// You can play around with these too!
+$h1-color: $mono-color;
+$h2-color: $mono-color; 
+$h3-color: $darkerGray; 
+$h4-color: $gray; 
 
-$font-family-sans-serif: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif !default;
+// Your avatar
 
-$font-size-base: 0.9375rem !default;
+$avatar: "/images/avatar.jpg";
 
-$headings-font-weight:   300 !default;
 
-// Navbar
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$raleway: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
 
-$navbar-dark-hover-color:           rgba($white,1) !default;
-
-$navbar-light-hover-color:          rgba($black,.9) !default;
-
-// Alerts
-
-$alert-border-width:                0 !default;
-
-// Progress bars
-
-$progress-height:               0.5rem !default;
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
