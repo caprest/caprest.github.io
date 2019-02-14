@@ -1,25 +1,14 @@
 ---
 layout: post
-title: The Eternal Lorem Ipsum Placeholder Text Here
-author: Author Name
+title: SamplePost
+author: Fumiya Shimada
 ---
 
 # Introduction
-アインシュタインは以下の公式を発見した．
+You can write with MathJax.
 $$e = mc^2$$
 
-ブラウン運動はすごい
-* 俺がウォール街のランダムウォーカーだ
-* そういう視点もある
-
-
-## kakumei
-okome
-
-# b
-$$(X,\mathcal{F},\mu)$$を確率空間という．
-
-
+# Method
 $$
 \begin{eqnarray}
 \mathrm{ReLu} (x ) =  
